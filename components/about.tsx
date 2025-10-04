@@ -6,27 +6,27 @@ export function About() {
     <section id="nosotros" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-black mb-4">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4 underline decoration-white decoration-2">
             Quiénes Somos
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            En Rufina showroom, somos más que una tienda de ropa. Somos un
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed text-white">
+            En Lukem Store, somos más que una tienda de ropa. Somos un
             espacio dedicado a la moda y el estilo.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div className="space-y-4">
-            <h3 className="font-playfair text-2xl font-bold">
+            <h3 className="font-playfair text-2xl font-bold underline decoration-white decoration-2">
               Nuestra Historia
             </h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-white">
               Fundada en 2020, Rufina showroom nació de la pasión por el deporte
               y el deseo de ofrecer productos de calidad superior a precios
               accesibles. Comenzamos como una pequeña tienda local y hemos
               crecido hasta convertirnos en un referente en ropa deportiva.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-white">
               Trabajamos directamente con las mejores marcas y fabricantes para
               garantizar que cada producto cumpla con nuestros estándares de
               calidad, durabilidad y rendimiento.
@@ -34,14 +34,14 @@ export function About() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="font-playfair text-2xl font-bold">Nuestra Misión</h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <h3 className="font-playfair text-2xl font-bold underline decoration-white decoration-2">Nuestra Misión</h3>
+            <p className="text-muted-foreground leading-relaxed text-white">
               Inspirar y equipar a atletas de todos los niveles con ropa
               deportiva de alta calidad que mejore su rendimiento y confianza.
               Creemos que todos merecen acceso a productos excepcionales sin
               importar su presupuesto.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-white">
               Nos comprometemos a ofrecer un servicio al cliente excepcional,
               asesoramiento experto y una experiencia de compra que supere tus
               expectativas.

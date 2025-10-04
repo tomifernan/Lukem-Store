@@ -18,6 +18,7 @@ const products = [
     sizes: ["S", "M", "L", "XL"],
     colors: ["Rojo", "Negro", "Azul"],
   },
+
   {
     id: 2,
     name: "Pantalón Deportivo Elite",
@@ -94,25 +95,29 @@ export function Products({ onAddToCart }) {
   };
 
   return (
-    <section id="productos" className="py-20 bg-muted/30">
+    <section id="productos" className="py-20 bg-black">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-black mb-4">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-black mb-4 text-white underline decoration-white decoration-2">
             Nuestros Productos
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-6">
-            Ropa deportiva de alta calidad para cada tipo de entrenamiento
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-6 text-white">
+            Ropa de alta calidad para hombres.
           </p>
           <div className="flex flex-wrap justify-center gap-2 mb-4">
             {categories.map((cat) => (
               <Button
-                key={cat}
-                variant={selectedCategory === cat ? "default" : "outline"}
-                className="font-semibold"
-                onClick={() => setSelectedCategory(cat)}
-              >
-                {cat}
-              </Button>
+      key={cat}
+      variant={selectedCategory === cat ? "default" : "outline"}
+      className={`font-semibold ${
+        selectedCategory === cat
+          ? "bg-black text-white" // botón seleccionado: fondo blanco, texto negro
+          : "text-black border-white" // botones no seleccionados: texto y borde blancos
+      }`}
+      onClick={() => setSelectedCategory(cat)}
+    >
+      {cat}
+    </Button>
             ))}
           </div>
         </div>

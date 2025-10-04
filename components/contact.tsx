@@ -118,7 +118,7 @@ export function Contact() {
                       onChange={handleChange}
                       placeholder="Tu nombre"
                       required
-                      className="bg-black text-white border-white"
+                      className="bg-black text-white border-white placeholder:text-white"
                     />
                   </div>
 
@@ -137,7 +137,7 @@ export function Contact() {
                       placeholder="¿En qué podemos ayudarte?"
                       rows={5}
                       required
-                      className="bg-black text-white border-white"
+                      className="bg-black text-white border-white placeholder:text-white"
                     />
                   </div>
 

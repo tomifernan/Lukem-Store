@@ -10,11 +10,13 @@ import {
 export function Footer() {
   return (
     <footer className="bg-black text-white">
+      {/* Línea blanca separadora arriba del footer */}
+      <div className="border-t border-white w-full mb-8"></div>
+
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              {/* Logo sin punto rojo */}
               <span className="font-playfair text-xl font-bold text-white">
                 Lukem store
               </span>

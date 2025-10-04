@@ -9,11 +9,12 @@ type Product = {
   price: string;
   size?: string;
   color?: string;
+  cartId: number; // identificador único para el carrito
 };
 
 type CartProps = {
   cart: Product[];
-  onRemove: (id: number) => void;
+  onRemove: (cartId: number) => void;
 };
 
 function getTotal(cart: Product[]) {
@@ -53,8 +54,11 @@ export function Cart({ cart, onRemove }: CartProps) {
       ) : (
         <>
           <ul className="mb-4">
-            {cart.map((product, idx) => (
-              <li key={idx} className="flex justify-between items-center py-1">
+            {cart.map((product) => (
+              <li
+                key={product.cartId}
+                className="flex justify-between items-center py-1"
+              >
                 <span className="text-white text-sm">
                   {product.name}{" "}
                   <span className="font-semibold">{product.price}</span>
@@ -65,7 +69,7 @@ export function Cart({ cart, onRemove }: CartProps) {
                 <Button
                   variant="ghost"
                   size="icon"
-                  onClick={() => onRemove(product.id)}
+                  onClick={() => onRemove(product.cartId)} // 👈 usa cartId
                   aria-label="Eliminar"
                   className="text-white"
                 >
